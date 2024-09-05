@@ -1,0 +1,9 @@
+import { Request, Response } from 'express';
+
+class UserController {
+    public async getUser(req: Request, res: Response): Promise<void> {
+        res.send('User data');
+    }
+}
+
+export default new UserController();
