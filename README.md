@@ -1,3 +1,4 @@
+
 # Projeto de Criação Automática de Estrutura Node.js com Integração ao GitHub
 
 Este script Bash foi desenvolvido para automatizar a criação de um projeto Node.js, configurando a estrutura de diretórios e arquivos, instalando dependências essenciais, e oferecendo a opção de configurar um repositório Git no GitHub, além de fazer o push inicial dos arquivos.
@@ -23,3 +24,5 @@ Este script Bash foi desenvolvido para automatizar a criação de um projeto Nod
 
    ```bash
    bash projeto.sh
+## Observações:
+   dependencias poder ser mudadas manualmente dentro do script
