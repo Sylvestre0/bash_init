@@ -25,6 +25,7 @@ estrutura() {
     echo -e "${BLUE}Criando a estrutura de pastas...${NC}"
     mkdir "$nome_project"
     cd "$nome_project" || exit
+    echo "node_module/" > .gitignore
     echo -e "${BLUE}Inicializando o projeto Node.js${NC}"
     npm init -y
 
@@ -43,6 +44,8 @@ estrutura() {
     cp ../model_templates/cssTemplate.txt src/views/css/styles.css
     cp ../model_templates/htmlTemplate.txt src/views/templates/index.html
     cp ../model_templates/JsTemplate.txt src/views/js/index.js
+
+    
 
     sed -i "s/NOME_DO_PROJETO/$nome_project/g" src/views/templates/index.html
 
